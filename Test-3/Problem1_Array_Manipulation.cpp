@@ -16,7 +16,7 @@ vector<string> split(const string &);
  *  1. INTEGER n
  *  2. 2D_INTEGER_ARRAY queries
  */
-void addRange(vector<int> queries, vector<int>& result, int n, long& max){
+void addRange(vector<int> queries, vector<long>& result, int n, long& max){
     
     for(int i=queries[0];i<=queries[1];i++){
         result[i] +=  queries[2];
@@ -27,8 +27,9 @@ void addRange(vector<int> queries, vector<int>& result, int n, long& max){
     // for(auto i:result){
     //     cout<<i<<" ";
     // }
-    cout<<endl;
+    //cout<<endl;
 }
+//Approach-1 --> Gives TLE? why?
 long arrayManipulation(int n, vector<vector<int>> queries) {
     // Create vector of size n with initilize to 0
     // Iterate for each query
@@ -38,7 +39,7 @@ long arrayManipulation(int n, vector<vector<int>> queries) {
         // queries[0][2] --> k
     // Add to from a to b given k value to it.
     // find the max of array
-    vector<int> result(n+1,0);
+    vector<long> result(n+1,0);
     int qSize = queries.size();
     long max = INT_MIN;
     for(int i=0;i<qSize;i++){
@@ -124,6 +125,7 @@ vector<string> split(const string &str) {
 
     return tokens;
 }
+
 
 
 /*

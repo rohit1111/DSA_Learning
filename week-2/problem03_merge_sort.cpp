@@ -11,7 +11,7 @@ class Solution {
         int len2 = r - mid;
         
         int *first = new int[len1];
-        int *second = new int[len1];
+        int *second = new int[len2];
         
         int k = l;
         for(int i=0;i<len1;i++){

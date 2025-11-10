@@ -42,7 +42,8 @@ class Solution {
             arr[k++] = second[index2++];    
         }
         
-        
+        delete []first;
+        delete []second;
     }
     void mergeSort(vector<int>& arr, int l, int r) {
         

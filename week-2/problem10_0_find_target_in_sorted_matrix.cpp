@@ -72,7 +72,9 @@ class Solution{
         int end = n*m -1;
         while(start<=end){
             int mid = start + (end - start)/2;
-            int row = mid/m;
+            
+            //Flatteneing 2D array into 1D array
+            int row = mid/m;    
             int col = mid%m;
             
             if(nums[row][col] == target){

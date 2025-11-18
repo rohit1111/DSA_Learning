@@ -67,6 +67,8 @@ int main()
         cout<<i<<" ";
     }
     cout<<endl;
+
+    //Time Complexity: O(n + n), SC: O(1)
     target = 20;
     result.clear();
     result = s1.searchInRowSorted2DMatrixApproach2(nums,target);
